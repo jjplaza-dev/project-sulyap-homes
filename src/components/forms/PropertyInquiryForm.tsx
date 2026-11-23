@@ -26,7 +26,7 @@ interface PropertyInquiryFormProps {
 }
 
 /**
- * STATIC PREVIEW of the property inquiry form (R10). Nothing is validated,
+ * STATIC PREVIEW of the property inquiry forms (R10). Nothing is validated,
  * stored or sent until Phase 5. `propertyId` is carried for the future
  * endpoint but is never transmitted from this preview.
  */

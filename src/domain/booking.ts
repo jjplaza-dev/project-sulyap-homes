@@ -4,7 +4,7 @@ import type {
   IsoDateString,
   TimeOfDayString,
 } from './common';
-import type { BookingPreviewState } from './enums';
+import type { BackupKind, BookingPreviewState } from './enums';
 
 /**
  * Fallback offered when the assigned agent has no availability.
@@ -26,6 +26,22 @@ export interface CentralBackupContact {
 }
 
 export type BackupContact = AgentBackupContact | CentralBackupContact;
+
+/**
+ * What the booking panel needs to know about one property: its title and,
+ * if any, where to send visitors when the assigned agent has no availability.
+ * Built by `getBookableProperty`.
+ */
+export interface BookableProperty {
+  readonly id: EntityId;
+  readonly title: string;
+  readonly backup?: {
+    readonly kind: BackupKind;
+    /** Present for `agent` backups. */
+    readonly agentName?: string;
+    readonly contactHref: string;
+  };
+}
 
 /** One sample time slot in the static booking panel (Phase 2 only). */
 export interface TourSlot {

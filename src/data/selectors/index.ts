@@ -5,3 +5,4 @@
 export * from './properties';
 export * from './people-places';
 export * from './content';
+export * from './booking';

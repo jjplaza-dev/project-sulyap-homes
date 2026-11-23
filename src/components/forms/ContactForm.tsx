@@ -20,7 +20,7 @@ const PREVIEW_STATES: ReadonlyArray<{ value: FormPreviewState; label: string }> 
 const controlClass = 'min-h-11 bg-surface text-base text-pine-ink';
 
 /**
- * STATIC PREVIEW of the general inquiry form (R16). Submitting does nothing:
+ * STATIC PREVIEW of the general inquiry forms (R16). Submitting does nothing:
  * no message is validated, stored or sent until Phase 5. The state switch is
  * a design-review aid and is removed before launch.
  */

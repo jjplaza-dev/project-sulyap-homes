@@ -5,7 +5,7 @@ import { ChevronDown, X } from 'lucide-react';
 import type { PropertyFilterOptions, SearchCriteria } from '@/domain';
 import { cx } from '@/lib/cx';
 import { formatPeso } from '@/lib/format';
-import { ChoiceGroup, NumberField, SelectField } from './fields';
+import { ChoiceGroup, NumberField, SelectField } from '@/components/search/fields';
 
 /** How many filters are currently set. */
 export function countActiveFilters(criteria: SearchCriteria): number {

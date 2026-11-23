@@ -195,6 +195,20 @@ export const editorialBlocks = {
     primaryAction: { label: 'Explore Properties', href: '/buy' },
     secondaryAction: { label: 'Schedule a Viewing', href: '/agents' },
   },
+  'home-buy-entry': {
+    id: 'home-buy-entry',
+    eyebrow: 'Buy',
+    heading: 'Homes and lots for sale',
+    body: ['Houses, condominiums, townhouses and residential lots, each with clear pricing and a described neighborhood.'],
+    primaryAction: { label: 'Browse homes for sale', href: '/buy' },
+  },
+  'home-rent-entry': {
+    id: 'home-rent-entry',
+    eyebrow: 'Rent',
+    heading: 'Places to lease',
+    body: ['Monthly prices and lease terms up front, from studio condominiums to family houses.'],
+    primaryAction: { label: 'Browse places to rent', href: '/rent' },
+  },
   'home-categories': {
     id: 'home-categories',
     eyebrow: 'Browse by type',
@@ -302,6 +316,12 @@ export const editorialBlocks = {
     eyebrow: 'Mission and approach',
     heading: 'Fewer listings, better looked after',
     body: ['We choose each property carefully, photograph it honestly and describe the neighborhood around it, so that a viewing confirms what you already expect.'],
+  },
+  'about-values': {
+    id: 'about-values',
+    eyebrow: 'What we stand for',
+    heading: 'Four things we do the same way every time',
+    body: [],
   },
   'about-help': {
     id: 'about-help',

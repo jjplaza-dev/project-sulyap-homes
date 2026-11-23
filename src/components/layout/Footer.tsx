@@ -4,7 +4,7 @@ import { getPublicSiteSettings } from '@/data/selectors';
 import { LogoMono } from '@/components/brand/Logo';
 import { PineBranch } from '@/components/brand/Botanical';
 import { mailtoHref, telHref } from '@/lib/format';
-import { Container } from './Container';
+import { Container } from '@/components/layout/Container';
 
 const linkClass =
   'inline-flex min-h-11 items-center text-cloud-mist/80 underline-offset-4 transition-colors hover:text-cloud-mist hover:underline';
@@ -18,7 +18,7 @@ export function Footer() {
       <Container className="relative py-16 lg:py-20">
         <div className="grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-4">
-            <Link href="/" aria-label={`${businessName} — home`} className="inline-block rounded-md">
+            <Link href="/public" aria-label={`${businessName} — home`} className="inline-block rounded-md">
               <LogoMono className="h-11 w-auto text-cloud-mist" />
             </Link>
             <p className="mt-5 max-w-sm text-cloud-mist/80">{footer.about}</p>

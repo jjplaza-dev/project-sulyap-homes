@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import type { AnchorHTMLAttributes, ReactNode } from 'react';
-import { buttonClasses, type ButtonSize, type ButtonTone, type ButtonVariant } from './button-styles';
+import { buttonClasses, type ButtonSize, type ButtonTone, type ButtonVariant } from '@/components/layout/button-styles';
 
 interface ButtonLinkProps
   extends Omit<AnchorHTMLAttributes<HTMLAnchorElement>, 'href' | 'className' | 'children'> {

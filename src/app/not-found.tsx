@@ -10,7 +10,7 @@ export default function NotFound() {
     <main id="main" className="relative flex min-h-dvh items-center overflow-hidden py-16">
       <div aria-hidden="true" className="bg-grid-lines pointer-events-none absolute inset-0" />
       <Container className="relative">
-        <Link href="/" aria-label="Sulyap Homes & Leasing — home" className="inline-block rounded-md">
+        <Link href="/public" aria-label="Sulyap Homes & Leasing — home" className="inline-block rounded-md">
           <LogoHorizontal className="h-11 w-auto" />
         </Link>
         <p className="text-eyebrow mt-16 text-berry-deep">Page not found</p>
@@ -20,7 +20,7 @@ export default function NotFound() {
           browsing homes.
         </p>
         <div className="mt-8 flex flex-wrap gap-3">
-          <ButtonLink href="/" size="lg">
+          <ButtonLink href="/public" size="lg">
             Back to the homepage
           </ButtonLink>
           <ButtonLink href="/buy" size="lg" variant="outline">

@@ -4,7 +4,7 @@ import { useId, useState } from 'react';
 import type { PropertyFilterOptions, PropertyPurpose } from '@/domain';
 import { ButtonLink } from '@/components/layout/ButtonLink';
 import { cx } from '@/lib/cx';
-import { SelectField } from './fields';
+import { SelectField } from '@/components/search/fields';
 
 interface HeroSearchProps {
   options: Record<PropertyPurpose, PropertyFilterOptions>;

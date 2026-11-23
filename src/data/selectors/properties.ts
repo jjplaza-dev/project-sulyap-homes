@@ -13,6 +13,11 @@ const byNewest = (a: Property, b: Property): number =>
 const isOpen = (property: Property): boolean =>
   property.status === 'available' || property.status === 'reserved';
 
+/** Every listing, newest first. Used for static route generation. */
+export function getAllProperties(): ReadonlyArray<Property> {
+  return [...properties].sort(byNewest);
+}
+
 /** All listings for one purpose, newest first (sold/rented listings stay visible, labelled). */
 export function getPropertiesByPurpose(purpose: PropertyPurpose): ReadonlyArray<Property> {
   return properties.filter((p) => p.purpose === purpose).sort(byNewest);

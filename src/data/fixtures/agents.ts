@@ -5,7 +5,7 @@
  * appear in public selectors.
  */
 import type { Agent } from '@/domain';
-import { placeholderImage } from './media';
+import { placeholderImage } from '@/data/fixtures/media';
 
 export const agentIds = {
   isabel: 'ag-isabel-bautista',

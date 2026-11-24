@@ -6,7 +6,7 @@ import type { MediaImage } from '@/domain';
 import { MediaView } from '@/components/brand/MediaView';
 import { buttonClasses } from '@/components/layout/button-styles';
 import { cx } from '@/lib/cx';
-import { Lightbox } from '../../../phase 2e/Lightbox';
+import { Lightbox } from '../motion/Lightbox';
 
 /**
  * Primary-plus-grid photo mosaic. Every tile is a button that opens the

@@ -10,7 +10,7 @@
 import { useId, type ReactNode } from 'react';
 import type { PlaceholderArtKey } from '@/domain';
 import { cx } from '@/lib/cx';
-import { LogoHorizontal } from '@/components/brand/Logo';
+import { LogoHorizontal } from './Logo';
 
 const v = (token: string) => `var(--${token})`;
 
